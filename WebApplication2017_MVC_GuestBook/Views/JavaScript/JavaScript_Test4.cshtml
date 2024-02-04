@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript_Test4 (JavaScriptResult )</title>
+</head>
+<body>
+    <div>
+        <h3>JavaScript_Test4</h3>......搭配 JavaScriptResult
+
+        <!-- *******************************************************************  -->
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+
+        <script>
+            //// 方法一：
+            //// https://hk.saowen.com/a/c41d508d7a3bb56b3f97713d1fe49a9956529e713384e3c08c7bf3580a78823d
+            //// 可以在頁面上使用 jQuery的  .getScript()方法，向服務器獲取js代碼，然後執行js代碼
+            //$.getScript("/JavaScript/JavaScriptMessage2");
+            ////                  /控制器/動作
+
+
+            // 方法二：
+            // http://www.itread01.com/articles/1476342308.html
+            $(function () {
+                $.ajax({
+                    type: "post",
+                    url: "/JavaScript/JavaScriptMessage2"
+                });
+            });
+        </script>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WebApplication2017_MVC_GuestBook.WCF.WCF_Service_OK" CodeBehind="WCF_Service_OK.svc.cs" Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>

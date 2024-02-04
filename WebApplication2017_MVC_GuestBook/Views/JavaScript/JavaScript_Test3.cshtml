@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript_Test3 (JavaScriptResult )</title>
+</head>
+<body>
+
+    <div>
+        <h3>JavaScript_Test3</h3>......搭配 JavaScriptResult
+        <br /><br />
+
+        **************************************************<br />
+        @Ajax.ActionLink("請按我一下！", "JavaScriptMessage", null)   <br />
+        **************************************************<br />
+
+
+
+        <!-- *******************************************************************  -->
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/jqueryajax")     @* // 重點！！ /App_Start/BundleConfig.cs設定檔需要配合修改！  *@
+        @*
+        //// 或是寫成JavaScript提醒，確認後將跳回首頁。
+        //// 畫面 View 需搭配「jquery.unobtrusive-ajax.js」或「jquery.unobtrusive-ajax.min.js」（自己從NuGet輸入「ajax」，手動安裝補上）
+        //// https://dotblogs.com.tw/brooke/2016/09/09/182829
+        //// http://kevintsengtw.blogspot.com/2012/09/aspnet-mvc-javascript-alert.html
+        //// https://blog.miniasp.com/post/2014/11/10/ASPNET-MVC-5-Microsoft-jQuery-Unobtrusive-Ajax-lost-and-found.aspx
+        *@
+
+    </div>
+</body>
+</html>

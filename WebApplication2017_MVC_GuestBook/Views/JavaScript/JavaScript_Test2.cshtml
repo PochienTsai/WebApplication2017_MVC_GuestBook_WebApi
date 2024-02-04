@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>JavaScript_Test2</title>
+</head>
+<body>
+    <div>
+        <h3>JavaScript_Test2</h3>
+
+        @if (TempData["jsMessage"] != null)
+        {
+        <script type="text/javascript">
+                @*   // 有問題，編譯後會變成
+                        //       "alert(\u0027找不到資料！\u0027); location.href=\u0027 /JavaScript/Index \u0027;"
+                  @Html.Raw(Json.Encode(TempData["jsMessage"]))
+                *@
+
+
+                  @Html.Raw(TempData["jsMessage"])
+        </script>
+        }
+
+        </div>
+</body>
+</html>
