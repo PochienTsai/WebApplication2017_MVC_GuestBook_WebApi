@@ -34,8 +34,8 @@ namespace WebApplication2017_MVC_GuestBook.Models
 
         //public System.Data.Entity.DbSet<WebApplication2017_MVC_GuestBook.ModelsLogin.db_user> db_user { get; set; }
 
-        //public System.Data.Entity.DbSet<WebApplication2017_MVC_GuestBook.Models2.UserTable2> UserTable2 { get; set; }
+        public System.Data.Entity.DbSet<WebApplication2017_MVC_GuestBook.Models2.UserTable2> UserTable2 { get; set; }
 
-        //public System.Data.Entity.DbSet<WebApplication2017_MVC_GuestBook.Models2.DepartmentTable2> DepartmentTable2 { get; set; }
+        public System.Data.Entity.DbSet<WebApplication2017_MVC_GuestBook.Models2.DepartmentTable2> DepartmentTable2 { get; set; }
     }
 }
