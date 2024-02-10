@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebApplication2017_MVC_GuestBook</RootNamespace>
     <AssemblyName>WebApplication2017_MVC_GuestBook</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -26,7 +26,6 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,14 +55,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
@@ -117,7 +117,6 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -173,18 +172,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models2\DepartmentTable2.cs" />
-    <Compile Include="Models2\MVC_UserDB2Context.cs" />
-    <Compile Include="Models2\UDmultiViewModel.cs" />
-    <Compile Include="Models2\UDViewModel.cs" />
-    <Compile Include="Models2\UserDepartmentViewModel.cs" />
-    <Compile Include="Models2\UserTable2.cs" />
-    <Compile Include="Models2\UserTable2ViewModel.cs" />
     <Compile Include="ModelsWebService\WS_Class1.cs" />
     <Compile Include="ModelsWebService\WS_Class2_WebService.cs" />
     <Compile Include="Models\MVC_UserDBContext.cs" />
-    <Compile Include="Models\Repo\IUserTableRepository.cs" />
-    <Compile Include="Models\Repo\UserTableRepository.cs" />
     <Compile Include="Models\UserTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -197,10 +187,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models2\MVC_ViewModel_004.png" />
-    <Content Include="Models2\UserDB2_01.jpg" />
-    <Content Include="Models2\UserDB2_02.jpg" />
-    <Content Include="Models2\UserDB2_03.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -285,12 +271,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WindoswDesktopClassLibrary1\WindoswDesktopClassLibrary1.csproj">
-      <Project>{6a8aa79a-9904-4206-98fc-d0bd2a88f539}</Project>
-      <Name>WindoswDesktopClassLibrary1</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,14 +5,13 @@ using System.Web;
 using System.Web.Mvc;
 using WebApplication2017_MVC_GuestBook.Models;  // 自己動手寫上命名空間 -- 「專案名稱.Models」。
 //*********************************自己加寫（宣告）的NameSpace
-//ADO.NET
 using System.Web.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 
 using System.Web.Script.Serialization;   //** 自己宣告、加入。JSON會用到。JavaScriptSerializer
 
-using Newtonsoft.Json;   //** 自己宣告、加入。JSON.NET會用到。(較推薦)
+using Newtonsoft.Json;   //** 自己宣告、加入。JSON.NET會用到。
 //*********************************
 
 
@@ -177,18 +176,17 @@ namespace WebApplication2017_MVC_GuestBook.Controllers
 
                 //*****************************************************************(start)
                 //** 搭配 DLL類別庫 WindoswDesktopClassLibrary1 裡面的「JsonHelper.cs」
-                WindoswDesktopClassLibrary1.JsonHelper JH = new WindoswDesktopClassLibrary1.JsonHelper();
+                //WindoswDesktopClassLibrary1.JsonHelper JH = new WindoswDesktopClassLibrary1.JsonHelper();
 
                 // 產生三種結果（三種輸出）：
-                result += "<hr />**** DataSet ****<br />" + JH.ToJson(ds) + "<br /><br />";
-                result += "<hr />*** DataTable ***<br />" + JH.ToJson(ds.Tables[0]) + "<br /><br />";
-                result += "<hr />*** 自己添加的功能，可產生「欄位名稱」與「值」 ***<br />" + JH.ToJson2Column(ds.Tables[0]);
+                //result += "<hr />**** DataSet ****<br />" + JH.ToJson(ds) + "<br /><br />";
+                //result += "<hr />*** DataTable ***<br />" + JH.ToJson(ds.Tables[0]) + "<br /><br />";
+                //result += "<hr />*** 自己添加的功能，可產生「欄位名稱」與「值」 ***<br />" + JH.ToJson2Column(ds.Tables[0]);
                 //*****************************************************************(end)
 
                 return Content(result);
             }
-            catch (Exception ex)
-            {
+            catch (Exception ex)  {
                 return Content("<hr /> Exception Error Message----  " + ex.ToString());
             }
             finally

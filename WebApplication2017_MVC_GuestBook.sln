@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.34320.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2017_MVC_GuestBook", "WebApplication2017_MVC_GuestBook\WebApplication2017_MVC_GuestBook.csproj", "{1740AA86-14B8-4681-80B3-BBC7020AE2EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindoswDesktopClassLibrary1", "WindoswDesktopClassLibrary1\WindoswDesktopClassLibrary1.csproj", "{6A8AA79A-9904-4206-98FC-D0BD2A88F539}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{1740AA86-14B8-4681-80B3-BBC7020AE2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1740AA86-14B8-4681-80B3-BBC7020AE2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1740AA86-14B8-4681-80B3-BBC7020AE2EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6A8AA79A-9904-4206-98FC-D0BD2A88F539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A8AA79A-9904-4206-98FC-D0BD2A88F539}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A8AA79A-9904-4206-98FC-D0BD2A88F539}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A8AA79A-9904-4206-98FC-D0BD2A88F539}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
